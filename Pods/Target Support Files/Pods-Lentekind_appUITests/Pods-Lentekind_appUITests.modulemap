@@ -1,0 +1,6 @@
+framework module Pods_Lentekind_appUITests {
+  umbrella header "Pods-Lentekind_appUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

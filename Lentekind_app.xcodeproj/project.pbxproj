@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		04BEE98F21D536B300B0AAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */; };
-		04BEE99121D536B300B0AAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE99021D536B300B0AAA7 /* ViewController.swift */; };
+		04BEE99121D536B300B0AAA7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE99021D536B300B0AAA7 /* LoginController.swift */; };
 		04BEE99421D536B300B0AAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99221D536B300B0AAA7 /* Main.storyboard */; };
 		04BEE99621D536B500B0AAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99521D536B500B0AAA7 /* Assets.xcassets */; };
 		04BEE99921D536B500B0AAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99721D536B500B0AAA7 /* LaunchScreen.storyboard */; };
 		04BEE9A421D536B600B0AAA7 /* Lentekind_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9A321D536B600B0AAA7 /* Lentekind_appTests.swift */; };
 		04BEE9AF21D536B600B0AAA7 /* Lentekind_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9AE21D536B600B0AAA7 /* Lentekind_appUITests.swift */; };
+		34FE874C894CD1994945D3E0 /* Pods_Lentekind_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CAC2F9FC02D87599573111 /* Pods_Lentekind_appTests.framework */; };
+		40974D058DA571794992EDC6 /* Pods_Lentekind_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B556123FC97BB44521C725F3 /* Pods_Lentekind_appUITests.framework */; };
+		D5616EC08000EE5257D873C6 /* Pods_Lentekind_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB5642E633D21B8B0410D67 /* Pods_Lentekind_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043C760BA9B1C9DCCAAB61E0 /* Pods-Lentekind_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appUITests/Pods-Lentekind_appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		04BEE98B21D536B300B0AAA7 /* Lentekind_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lentekind_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04BEE99021D536B300B0AAA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04BEE99021D536B300B0AAA7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		04BEE99321D536B300B0AAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04BEE99521D536B500B0AAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BEE99821D536B500B0AAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		04BEE9AA21D536B600B0AAA7 /* Lentekind_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lentekind_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BEE9AE21D536B600B0AAA7 /* Lentekind_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lentekind_appUITests.swift; sourceTree = "<group>"; };
 		04BEE9B021D536B600B0AAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		108CE7E0AC88263A66DE351B /* Pods-Lentekind_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_app/Pods-Lentekind_app.debug.xcconfig"; sourceTree = "<group>"; };
+		13B3C2694E06759E793C17A1 /* Pods-Lentekind_appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appUITests/Pods-Lentekind_appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2281DAAC5F2DF6292D4BBAF8 /* Pods-Lentekind_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_app/Pods-Lentekind_app.release.xcconfig"; sourceTree = "<group>"; };
+		54CEDE3AD9FF8CB7B3BF8236 /* Pods-Lentekind_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appTests/Pods-Lentekind_appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A33E8226F951B947CC7DA53 /* Pods-Lentekind_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appTests/Pods-Lentekind_appTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BB5642E633D21B8B0410D67 /* Pods_Lentekind_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lentekind_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B556123FC97BB44521C725F3 /* Pods_Lentekind_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lentekind_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CAC2F9FC02D87599573111 /* Pods_Lentekind_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lentekind_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5616EC08000EE5257D873C6 /* Pods_Lentekind_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FE874C894CD1994945D3E0 /* Pods_Lentekind_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40974D058DA571794992EDC6 /* Pods_Lentekind_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				04BEE9A221D536B600B0AAA7 /* Lentekind_appTests */,
 				04BEE9AD21D536B600B0AAA7 /* Lentekind_appUITests */,
 				04BEE98C21D536B300B0AAA7 /* Products */,
+				4DC041008F9B80BBD27BD3A9 /* Pods */,
+				BD198ECB3BED806E7D067D30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +114,8 @@
 		04BEE98D21D536B300B0AAA7 /* Lentekind_app */ = {
 			isa = PBXGroup;
 			children = (
+				04BEE9BD21D5749900B0AAA7 /* Controllers */,
 				04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */,
-				04BEE99021D536B300B0AAA7 /* ViewController.swift */,
 				04BEE99221D536B300B0AAA7 /* Main.storyboard */,
 				04BEE99521D536B500B0AAA7 /* Assets.xcassets */,
 				04BEE99721D536B500B0AAA7 /* LaunchScreen.storyboard */,
@@ -125,6 +142,45 @@
 			path = Lentekind_appUITests;
 			sourceTree = "<group>";
 		};
+		04BEE9BD21D5749900B0AAA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9BE21D574A700B0AAA7 /* User */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04BEE9BE21D574A700B0AAA7 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE99021D536B300B0AAA7 /* LoginController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		4DC041008F9B80BBD27BD3A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				108CE7E0AC88263A66DE351B /* Pods-Lentekind_app.debug.xcconfig */,
+				2281DAAC5F2DF6292D4BBAF8 /* Pods-Lentekind_app.release.xcconfig */,
+				54CEDE3AD9FF8CB7B3BF8236 /* Pods-Lentekind_appTests.debug.xcconfig */,
+				6A33E8226F951B947CC7DA53 /* Pods-Lentekind_appTests.release.xcconfig */,
+				13B3C2694E06759E793C17A1 /* Pods-Lentekind_appUITests.debug.xcconfig */,
+				043C760BA9B1C9DCCAAB61E0 /* Pods-Lentekind_appUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD198ECB3BED806E7D067D30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BB5642E633D21B8B0410D67 /* Pods_Lentekind_app.framework */,
+				E6CAC2F9FC02D87599573111 /* Pods_Lentekind_appTests.framework */,
+				B556123FC97BB44521C725F3 /* Pods_Lentekind_appUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BEE9B321D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_app" */;
 			buildPhases = (
+				3B6DB2A0C0C5F0FD60838870 /* [CP] Check Pods Manifest.lock */,
 				04BEE98721D536B300B0AAA7 /* Sources */,
 				04BEE98821D536B300B0AAA7 /* Frameworks */,
 				04BEE98921D536B300B0AAA7 /* Resources */,
+				11BF772A788816134DC19E3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BEE9B621D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_appTests" */;
 			buildPhases = (
+				7A7D4FAA185ECD7C6E468A84 /* [CP] Check Pods Manifest.lock */,
 				04BEE99B21D536B600B0AAA7 /* Sources */,
 				04BEE99C21D536B600B0AAA7 /* Frameworks */,
 				04BEE99D21D536B600B0AAA7 /* Resources */,
@@ -167,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BEE9B921D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_appUITests" */;
 			buildPhases = (
+				045A5FBD28CA2E4B191FA162 /* [CP] Check Pods Manifest.lock */,
 				04BEE9A621D536B600B0AAA7 /* Sources */,
 				04BEE9A721D536B600B0AAA7 /* Frameworks */,
 				04BEE9A821D536B600B0AAA7 /* Resources */,
@@ -251,12 +311,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		045A5FBD28CA2E4B191FA162 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lentekind_appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11BF772A788816134DC19E3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lentekind_app/Pods-Lentekind_app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lentekind_app/Pods-Lentekind_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B6DB2A0C0C5F0FD60838870 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lentekind_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7D4FAA185ECD7C6E468A84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lentekind_appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04BEE98721D536B300B0AAA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BEE99121D536B300B0AAA7 /* ViewController.swift in Sources */,
+				04BEE99121D536B300B0AAA7 /* LoginController.swift in Sources */,
 				04BEE98F21D536B300B0AAA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,10 +581,12 @@
 		};
 		04BEE9B421D536B600B0AAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108CE7E0AC88263A66DE351B /* Pods-Lentekind_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Lentekind_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,16 +594,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		04BEE9B521D536B600B0AAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2281DAAC5F2DF6292D4BBAF8 /* Pods-Lentekind_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Lentekind_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,12 +613,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		04BEE9B721D536B600B0AAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CEDE3AD9FF8CB7B3BF8236 /* Pods-Lentekind_appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +640,7 @@
 		};
 		04BEE9B821D536B600B0AAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A33E8226F951B947CC7DA53 /* Pods-Lentekind_appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +661,7 @@
 		};
 		04BEE9BA21D536B600B0AAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B3C2694E06759E793C17A1 /* Pods-Lentekind_appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +681,7 @@
 		};
 		04BEE9BB21D536B600B0AAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043C760BA9B1C9DCCAAB61E0 /* Pods-Lentekind_appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
