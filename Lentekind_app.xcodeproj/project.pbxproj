@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BEE98F21D536B300B0AAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */; };
+		04BEE99121D536B300B0AAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE99021D536B300B0AAA7 /* ViewController.swift */; };
+		04BEE99421D536B300B0AAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99221D536B300B0AAA7 /* Main.storyboard */; };
+		04BEE99621D536B500B0AAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99521D536B500B0AAA7 /* Assets.xcassets */; };
+		04BEE99921D536B500B0AAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99721D536B500B0AAA7 /* LaunchScreen.storyboard */; };
+		04BEE9A421D536B600B0AAA7 /* Lentekind_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9A321D536B600B0AAA7 /* Lentekind_appTests.swift */; };
+		04BEE9AF21D536B600B0AAA7 /* Lentekind_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9AE21D536B600B0AAA7 /* Lentekind_appUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04BEE9A021D536B600B0AAA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04BEE98321D536B300B0AAA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04BEE98A21D536B300B0AAA7;
+			remoteInfo = Lentekind_app;
+		};
+		04BEE9AB21D536B600B0AAA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04BEE98321D536B300B0AAA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04BEE98A21D536B300B0AAA7;
+			remoteInfo = Lentekind_app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BEE98B21D536B300B0AAA7 /* Lentekind_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lentekind_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04BEE99021D536B300B0AAA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04BEE99321D536B300B0AAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04BEE99521D536B500B0AAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BEE99821D536B500B0AAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04BEE99A21D536B500B0AAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BEE99F21D536B600B0AAA7 /* Lentekind_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lentekind_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BEE9A321D536B600B0AAA7 /* Lentekind_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lentekind_appTests.swift; sourceTree = "<group>"; };
+		04BEE9A521D536B600B0AAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BEE9AA21D536B600B0AAA7 /* Lentekind_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lentekind_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BEE9AE21D536B600B0AAA7 /* Lentekind_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lentekind_appUITests.swift; sourceTree = "<group>"; };
+		04BEE9B021D536B600B0AAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BEE98821D536B300B0AAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BEE99C21D536B600B0AAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BEE9A721D536B600B0AAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BEE98221D536B200B0AAA7 = {
+			isa = PBXGroup;
+			children = (
+				04BEE98D21D536B300B0AAA7 /* Lentekind_app */,
+				04BEE9A221D536B600B0AAA7 /* Lentekind_appTests */,
+				04BEE9AD21D536B600B0AAA7 /* Lentekind_appUITests */,
+				04BEE98C21D536B300B0AAA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04BEE98C21D536B300B0AAA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE98B21D536B300B0AAA7 /* Lentekind_app.app */,
+				04BEE99F21D536B600B0AAA7 /* Lentekind_appTests.xctest */,
+				04BEE9AA21D536B600B0AAA7 /* Lentekind_appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BEE98D21D536B300B0AAA7 /* Lentekind_app */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */,
+				04BEE99021D536B300B0AAA7 /* ViewController.swift */,
+				04BEE99221D536B300B0AAA7 /* Main.storyboard */,
+				04BEE99521D536B500B0AAA7 /* Assets.xcassets */,
+				04BEE99721D536B500B0AAA7 /* LaunchScreen.storyboard */,
+				04BEE99A21D536B500B0AAA7 /* Info.plist */,
+			);
+			path = Lentekind_app;
+			sourceTree = "<group>";
+		};
+		04BEE9A221D536B600B0AAA7 /* Lentekind_appTests */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9A321D536B600B0AAA7 /* Lentekind_appTests.swift */,
+				04BEE9A521D536B600B0AAA7 /* Info.plist */,
+			);
+			path = Lentekind_appTests;
+			sourceTree = "<group>";
+		};
+		04BEE9AD21D536B600B0AAA7 /* Lentekind_appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9AE21D536B600B0AAA7 /* Lentekind_appUITests.swift */,
+				04BEE9B021D536B600B0AAA7 /* Info.plist */,
+			);
+			path = Lentekind_appUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BEE98A21D536B300B0AAA7 /* Lentekind_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BEE9B321D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_app" */;
+			buildPhases = (
+				04BEE98721D536B300B0AAA7 /* Sources */,
+				04BEE98821D536B300B0AAA7 /* Frameworks */,
+				04BEE98921D536B300B0AAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lentekind_app;
+			productName = Lentekind_app;
+			productReference = 04BEE98B21D536B300B0AAA7 /* Lentekind_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04BEE99E21D536B600B0AAA7 /* Lentekind_appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BEE9B621D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_appTests" */;
+			buildPhases = (
+				04BEE99B21D536B600B0AAA7 /* Sources */,
+				04BEE99C21D536B600B0AAA7 /* Frameworks */,
+				04BEE99D21D536B600B0AAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BEE9A121D536B600B0AAA7 /* PBXTargetDependency */,
+			);
+			name = Lentekind_appTests;
+			productName = Lentekind_appTests;
+			productReference = 04BEE99F21D536B600B0AAA7 /* Lentekind_appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04BEE9A921D536B600B0AAA7 /* Lentekind_appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BEE9B921D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_appUITests" */;
+			buildPhases = (
+				04BEE9A621D536B600B0AAA7 /* Sources */,
+				04BEE9A721D536B600B0AAA7 /* Frameworks */,
+				04BEE9A821D536B600B0AAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BEE9AC21D536B600B0AAA7 /* PBXTargetDependency */,
+			);
+			name = Lentekind_appUITests;
+			productName = Lentekind_appUITests;
+			productReference = 04BEE9AA21D536B600B0AAA7 /* Lentekind_appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BEE98321D536B300B0AAA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nicolaas Leenknegt";
+				TargetAttributes = {
+					04BEE98A21D536B300B0AAA7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					04BEE99E21D536B600B0AAA7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 04BEE98A21D536B300B0AAA7;
+					};
+					04BEE9A921D536B600B0AAA7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 04BEE98A21D536B300B0AAA7;
+					};
+				};
+			};
+			buildConfigurationList = 04BEE98621D536B300B0AAA7 /* Build configuration list for PBXProject "Lentekind_app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04BEE98221D536B200B0AAA7;
+			productRefGroup = 04BEE98C21D536B300B0AAA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BEE98A21D536B300B0AAA7 /* Lentekind_app */,
+				04BEE99E21D536B600B0AAA7 /* Lentekind_appTests */,
+				04BEE9A921D536B600B0AAA7 /* Lentekind_appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BEE98921D536B300B0AAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BEE99921D536B500B0AAA7 /* LaunchScreen.storyboard in Resources */,
+				04BEE99621D536B500B0AAA7 /* Assets.xcassets in Resources */,
+				04BEE99421D536B300B0AAA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BEE99D21D536B600B0AAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BEE9A821D536B600B0AAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BEE98721D536B300B0AAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BEE99121D536B300B0AAA7 /* ViewController.swift in Sources */,
+				04BEE98F21D536B300B0AAA7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BEE99B21D536B600B0AAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BEE9A421D536B600B0AAA7 /* Lentekind_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BEE9A621D536B600B0AAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BEE9AF21D536B600B0AAA7 /* Lentekind_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04BEE9A121D536B600B0AAA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04BEE98A21D536B300B0AAA7 /* Lentekind_app */;
+			targetProxy = 04BEE9A021D536B600B0AAA7 /* PBXContainerItemProxy */;
+		};
+		04BEE9AC21D536B600B0AAA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04BEE98A21D536B300B0AAA7 /* Lentekind_app */;
+			targetProxy = 04BEE9AB21D536B600B0AAA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04BEE99221D536B300B0AAA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BEE99321D536B300B0AAA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04BEE99721D536B500B0AAA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BEE99821D536B500B0AAA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04BEE9B121D536B600B0AAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04BEE9B221D536B600B0AAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BEE9B421D536B600B0AAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lentekind_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04BEE9B521D536B600B0AAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lentekind_app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04BEE9B721D536B600B0AAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lentekind_appTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lentekind_app.app/Lentekind_app";
+			};
+			name = Debug;
+		};
+		04BEE9B821D536B600B0AAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lentekind_appTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lentekind_app.app/Lentekind_app";
+			};
+			name = Release;
+		};
+		04BEE9BA21D536B600B0AAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lentekind_appUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lentekind_app;
+			};
+			name = Debug;
+		};
+		04BEE9BB21D536B600B0AAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lentekind_appUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lentekind_app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BEE98621D536B300B0AAA7 /* Build configuration list for PBXProject "Lentekind_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BEE9B121D536B600B0AAA7 /* Debug */,
+				04BEE9B221D536B600B0AAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BEE9B321D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BEE9B421D536B600B0AAA7 /* Debug */,
+				04BEE9B521D536B600B0AAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BEE9B621D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BEE9B721D536B600B0AAA7 /* Debug */,
+				04BEE9B821D536B600B0AAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BEE9B921D536B600B0AAA7 /* Build configuration list for PBXNativeTarget "Lentekind_appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BEE9BA21D536B600B0AAA7 /* Debug */,
+				04BEE9BB21D536B600B0AAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04BEE98321D536B300B0AAA7 /* Project object */;
+}
