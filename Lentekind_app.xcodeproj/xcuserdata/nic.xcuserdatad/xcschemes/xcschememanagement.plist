@@ -7,7 +7,25 @@
 		<key>Lentekind_app.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>04BEE98A21D536B300B0AAA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04BEE99E21D536B600B0AAA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04BEE9A921D536B600B0AAA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

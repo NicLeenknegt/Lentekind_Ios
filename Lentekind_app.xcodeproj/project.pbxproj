@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BD10CD21D6D3F4006E2279 /* RegisterReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10CC21D6D3F4006E2279 /* RegisterReq.swift */; };
+		04BD10D121D6EA10006E2279 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D021D6EA10006E2279 /* RealmUser.swift */; };
+		04BD10D421D794BE006E2279 /* ParentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D321D794BE006E2279 /* ParentService.swift */; };
+		04BD10D621D79520006E2279 /* ChildContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D521D79520006E2279 /* ChildContainer.swift */; };
+		04BD10D821D79609006E2279 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D721D79609006E2279 /* Child.swift */; };
+		04BD10DA21D79713006E2279 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D921D79713006E2279 /* Medication.swift */; };
+		04BD10DC21D799F8006E2279 /* DateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10DB21D799F8006E2279 /* DateObject.swift */; };
+		04BD10DF21D79D38006E2279 /* AfParentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10DE21D79D38006E2279 /* AfParentService.swift */; };
+		04BD10E321D7A861006E2279 /* ChildListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10E221D7A861006E2279 /* ChildListController.swift */; };
+		04BD10E521D7D36B006E2279 /* ChildDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10E421D7D36B006E2279 /* ChildDetailController.swift */; };
+		04BD10E921D81AB3006E2279 /* DateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10E821D81AB3006E2279 /* DateFormatTransform.swift */; };
+		04BD10EB21D8EB48006E2279 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10EA21D8EB48006E2279 /* Message.swift */; };
+		04BD10ED21D91413006E2279 /* MedicationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10EC21D91413006E2279 /* MedicationListController.swift */; };
+		04BD10EF21D91E97006E2279 /* MedicationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10EE21D91E97006E2279 /* MedicationDetailController.swift */; };
+		04BD10F121D93178006E2279 /* MedicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10F021D93178006E2279 /* MedicationDelegate.swift */; };
 		04BEE98F21D536B300B0AAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */; };
 		04BEE99121D536B300B0AAA7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE99021D536B300B0AAA7 /* LoginController.swift */; };
 		04BEE99421D536B300B0AAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99221D536B300B0AAA7 /* Main.storyboard */; };
@@ -14,6 +29,26 @@
 		04BEE99921D536B500B0AAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BEE99721D536B500B0AAA7 /* LaunchScreen.storyboard */; };
 		04BEE9A421D536B600B0AAA7 /* Lentekind_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9A321D536B600B0AAA7 /* Lentekind_appTests.swift */; };
 		04BEE9AF21D536B600B0AAA7 /* Lentekind_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9AE21D536B600B0AAA7 /* Lentekind_appUITests.swift */; };
+		04BEE9C521D64BD600B0AAA7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9C421D64BD600B0AAA7 /* UserService.swift */; };
+		04BEE9C921D64CD400B0AAA7 /* ApiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9C821D64CD400B0AAA7 /* ApiUser.swift */; };
+		04BEE9CB21D64FD300B0AAA7 /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9CA21D64FD300B0AAA7 /* ApiEnvironment.swift */; };
+		04BEE9CE21D650D800B0AAA7 /* ApiContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9CD21D650D800B0AAA7 /* ApiContext.swift */; };
+		04BEE9D021D6512000B0AAA7 /* PersistentApiContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9CF21D6512000B0AAA7 /* PersistentApiContext.swift */; };
+		04BEE9D321D6524300B0AAA7 /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9D221D6524300B0AAA7 /* AlamofireService.swift */; };
+		04BEE9D621D6529D00B0AAA7 /* UserRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9D521D6529D00B0AAA7 /* UserRoute.swift */; };
+		04BEE9D821D6581400B0AAA7 /* AfUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9D721D6581400B0AAA7 /* AfUserService.swift */; };
+		04BEE9DC21D66EA300B0AAA7 /* LoginReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9DB21D66EA300B0AAA7 /* LoginReq.swift */; };
+		04BEE9E021D6872A00B0AAA7 /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9DF21D6872A00B0AAA7 /* UserProtocol.swift */; };
+		04BEE9E221D687E400B0AAA7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9E121D687E400B0AAA7 /* User.swift */; };
+		04BEE9E421D6B75100B0AAA7 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEE9E321D6B75100B0AAA7 /* RegisterController.swift */; };
+		04E8604521D964590044108E /* DateSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8604421D964590044108E /* DateSelectionController.swift */; };
+		04E8604821DCE8C80044108E /* ParentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8604721DCE8C80044108E /* ParentListController.swift */; };
+		04E8604A21DCFFFE0044108E /* AdminService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8604921DCFFFE0044108E /* AdminService.swift */; };
+		04E8604C21DD01070044108E /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8604B21DD01070044108E /* Parent.swift */; };
+		04E8605121DD05E40044108E /* AfAdminService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8605021DD05E40044108E /* AfAdminService.swift */; };
+		04E8605521DD28C20044108E /* FilterDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8605421DD28C20044108E /* FilterDateController.swift */; };
+		04E8605721DD4A830044108E /* FilterDateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8605621DD4A830044108E /* FilterDateDelegate.swift */; };
+		04E8605B21DD65F30044108E /* ParentDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8605A21DD65F30044108E /* ParentDetailController.swift */; };
 		34FE874C894CD1994945D3E0 /* Pods_Lentekind_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CAC2F9FC02D87599573111 /* Pods_Lentekind_appTests.framework */; };
 		40974D058DA571794992EDC6 /* Pods_Lentekind_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B556123FC97BB44521C725F3 /* Pods_Lentekind_appUITests.framework */; };
 		D5616EC08000EE5257D873C6 /* Pods_Lentekind_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB5642E633D21B8B0410D67 /* Pods_Lentekind_app.framework */; };
@@ -38,6 +73,21 @@
 
 /* Begin PBXFileReference section */
 		043C760BA9B1C9DCCAAB61E0 /* Pods-Lentekind_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appUITests/Pods-Lentekind_appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		04BD10CC21D6D3F4006E2279 /* RegisterReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReq.swift; sourceTree = "<group>"; };
+		04BD10D021D6EA10006E2279 /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
+		04BD10D321D794BE006E2279 /* ParentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentService.swift; sourceTree = "<group>"; };
+		04BD10D521D79520006E2279 /* ChildContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildContainer.swift; sourceTree = "<group>"; };
+		04BD10D721D79609006E2279 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		04BD10D921D79713006E2279 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		04BD10DB21D799F8006E2279 /* DateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateObject.swift; sourceTree = "<group>"; };
+		04BD10DE21D79D38006E2279 /* AfParentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AfParentService.swift; path = Lentekind_app/Api/Models/AfParentService.swift; sourceTree = SOURCE_ROOT; };
+		04BD10E221D7A861006E2279 /* ChildListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListController.swift; sourceTree = "<group>"; };
+		04BD10E421D7D36B006E2279 /* ChildDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDetailController.swift; sourceTree = "<group>"; };
+		04BD10E821D81AB3006E2279 /* DateFormatTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatTransform.swift; sourceTree = "<group>"; };
+		04BD10EA21D8EB48006E2279 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		04BD10EC21D91413006E2279 /* MedicationListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationListController.swift; sourceTree = "<group>"; };
+		04BD10EE21D91E97006E2279 /* MedicationDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDetailController.swift; sourceTree = "<group>"; };
+		04BD10F021D93178006E2279 /* MedicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDelegate.swift; sourceTree = "<group>"; };
 		04BEE98B21D536B300B0AAA7 /* Lentekind_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lentekind_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BEE99021D536B300B0AAA7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -51,6 +101,26 @@
 		04BEE9AA21D536B600B0AAA7 /* Lentekind_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lentekind_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BEE9AE21D536B600B0AAA7 /* Lentekind_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lentekind_appUITests.swift; sourceTree = "<group>"; };
 		04BEE9B021D536B600B0AAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BEE9C421D64BD600B0AAA7 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		04BEE9C821D64CD400B0AAA7 /* ApiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUser.swift; sourceTree = "<group>"; };
+		04BEE9CA21D64FD300B0AAA7 /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
+		04BEE9CD21D650D800B0AAA7 /* ApiContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContext.swift; sourceTree = "<group>"; };
+		04BEE9CF21D6512000B0AAA7 /* PersistentApiContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentApiContext.swift; sourceTree = "<group>"; };
+		04BEE9D221D6524300B0AAA7 /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		04BEE9D521D6529D00B0AAA7 /* UserRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoute.swift; sourceTree = "<group>"; };
+		04BEE9D721D6581400B0AAA7 /* AfUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfUserService.swift; sourceTree = "<group>"; };
+		04BEE9DB21D66EA300B0AAA7 /* LoginReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReq.swift; sourceTree = "<group>"; };
+		04BEE9DF21D6872A00B0AAA7 /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
+		04BEE9E121D687E400B0AAA7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04BEE9E321D6B75100B0AAA7 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		04E8604421D964590044108E /* DateSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionController.swift; sourceTree = "<group>"; };
+		04E8604721DCE8C80044108E /* ParentListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentListController.swift; sourceTree = "<group>"; };
+		04E8604921DCFFFE0044108E /* AdminService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminService.swift; sourceTree = "<group>"; };
+		04E8604B21DD01070044108E /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		04E8605021DD05E40044108E /* AfAdminService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfAdminService.swift; sourceTree = "<group>"; };
+		04E8605421DD28C20044108E /* FilterDateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDateController.swift; sourceTree = "<group>"; };
+		04E8605621DD4A830044108E /* FilterDateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDateDelegate.swift; sourceTree = "<group>"; };
+		04E8605A21DD65F30044108E /* ParentDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentDetailController.swift; sourceTree = "<group>"; };
 		108CE7E0AC88263A66DE351B /* Pods-Lentekind_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_app/Pods-Lentekind_app.debug.xcconfig"; sourceTree = "<group>"; };
 		13B3C2694E06759E793C17A1 /* Pods-Lentekind_appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appUITests/Pods-Lentekind_appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2281DAAC5F2DF6292D4BBAF8 /* Pods-Lentekind_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_app/Pods-Lentekind_app.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +159,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BD10D221D78F78006E2279 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				04BD10E221D7A861006E2279 /* ChildListController.swift */,
+				04BD10E421D7D36B006E2279 /* ChildDetailController.swift */,
+				04BD10EC21D91413006E2279 /* MedicationListController.swift */,
+				04BD10EE21D91E97006E2279 /* MedicationDetailController.swift */,
+				04BD10F021D93178006E2279 /* MedicationDelegate.swift */,
+				04E8604421D964590044108E /* DateSelectionController.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		04BD10DD21D79A74006E2279 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				04BD10D521D79520006E2279 /* ChildContainer.swift */,
+				04BD10D721D79609006E2279 /* Child.swift */,
+				04BD10D921D79713006E2279 /* Medication.swift */,
+				04BD10DB21D799F8006E2279 /* DateObject.swift */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
 		04BEE98221D536B200B0AAA7 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +208,8 @@
 		04BEE98D21D536B300B0AAA7 /* Lentekind_app */ = {
 			isa = PBXGroup;
 			children = (
+				04BEE9C621D64CA200B0AAA7 /* Api */,
+				04BEE9C021D6479900B0AAA7 /* Domain */,
 				04BEE9BD21D5749900B0AAA7 /* Controllers */,
 				04BEE98E21D536B300B0AAA7 /* AppDelegate.swift */,
 				04BEE99221D536B300B0AAA7 /* Main.storyboard */,
@@ -145,6 +241,8 @@
 		04BEE9BD21D5749900B0AAA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04E8604621DCE89B0044108E /* Admin */,
+				04BD10D221D78F78006E2279 /* Parent */,
 				04BEE9BE21D574A700B0AAA7 /* User */,
 			);
 			path = Controllers;
@@ -154,8 +252,111 @@
 			isa = PBXGroup;
 			children = (
 				04BEE99021D536B300B0AAA7 /* LoginController.swift */,
+				04BEE9E321D6B75100B0AAA7 /* RegisterController.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		04BEE9C021D6479900B0AAA7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9DA21D66E4C00B0AAA7 /* Model */,
+				04BEE9D921D66E4200B0AAA7 /* Protocols */,
+				04BEE9C321D64BB600B0AAA7 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		04BEE9C321D64BB600B0AAA7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9C421D64BD600B0AAA7 /* UserService.swift */,
+				04BD10D321D794BE006E2279 /* ParentService.swift */,
+				04E8604921DCFFFE0044108E /* AdminService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04BEE9C621D64CA200B0AAA7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9D421D6528200B0AAA7 /* Routes */,
+				04BEE9D121D6522400B0AAA7 /* Services */,
+				04BEE9CC21D650C300B0AAA7 /* Context */,
+				04BEE9C721D64CB400B0AAA7 /* Models */,
+				04BEE9CA21D64FD300B0AAA7 /* ApiEnvironment.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		04BEE9C721D64CB400B0AAA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9C821D64CD400B0AAA7 /* ApiUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04BEE9CC21D650C300B0AAA7 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9CD21D650D800B0AAA7 /* ApiContext.swift */,
+				04BEE9CF21D6512000B0AAA7 /* PersistentApiContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		04BEE9D121D6522400B0AAA7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9D221D6524300B0AAA7 /* AlamofireService.swift */,
+				04BEE9D721D6581400B0AAA7 /* AfUserService.swift */,
+				04BD10DE21D79D38006E2279 /* AfParentService.swift */,
+				04E8605021DD05E40044108E /* AfAdminService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04BEE9D421D6528200B0AAA7 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9D521D6529D00B0AAA7 /* UserRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		04BEE9D921D66E4200B0AAA7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04BEE9DF21D6872A00B0AAA7 /* UserProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04BEE9DA21D66E4C00B0AAA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BD10DD21D79A74006E2279 /* Child */,
+				04BEE9DB21D66EA300B0AAA7 /* LoginReq.swift */,
+				04BEE9E121D687E400B0AAA7 /* User.swift */,
+				04BD10CC21D6D3F4006E2279 /* RegisterReq.swift */,
+				04BD10D021D6EA10006E2279 /* RealmUser.swift */,
+				04BD10E821D81AB3006E2279 /* DateFormatTransform.swift */,
+				04BD10EA21D8EB48006E2279 /* Message.swift */,
+				04E8604B21DD01070044108E /* Parent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E8604621DCE89B0044108E /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				04E8604721DCE8C80044108E /* ParentListController.swift */,
+				04E8605421DD28C20044108E /* FilterDateController.swift */,
+				04E8605621DD4A830044108E /* FilterDateDelegate.swift */,
+				04E8605A21DD65F30044108E /* ParentDetailController.swift */,
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 		4DC041008F9B80BBD27BD3A9 /* Pods */ = {
@@ -344,12 +545,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Lentekind_app/Pods-Lentekind_app-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,8 +620,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BD10DA21D79713006E2279 /* Medication.swift in Sources */,
+				04BEE9E221D687E400B0AAA7 /* User.swift in Sources */,
+				04BD10DF21D79D38006E2279 /* AfParentService.swift in Sources */,
+				04E8604821DCE8C80044108E /* ParentListController.swift in Sources */,
+				04BEE9D621D6529D00B0AAA7 /* UserRoute.swift in Sources */,
+				04BEE9C521D64BD600B0AAA7 /* UserService.swift in Sources */,
+				04BD10DC21D799F8006E2279 /* DateObject.swift in Sources */,
+				04E8605521DD28C20044108E /* FilterDateController.swift in Sources */,
+				04E8604A21DCFFFE0044108E /* AdminService.swift in Sources */,
+				04BEE9E021D6872A00B0AAA7 /* UserProtocol.swift in Sources */,
+				04BD10D621D79520006E2279 /* ChildContainer.swift in Sources */,
+				04BD10D821D79609006E2279 /* Child.swift in Sources */,
+				04BD10EB21D8EB48006E2279 /* Message.swift in Sources */,
+				04BD10E521D7D36B006E2279 /* ChildDetailController.swift in Sources */,
+				04BEE9D321D6524300B0AAA7 /* AlamofireService.swift in Sources */,
+				04E8605121DD05E40044108E /* AfAdminService.swift in Sources */,
+				04BD10E321D7A861006E2279 /* ChildListController.swift in Sources */,
+				04BD10CD21D6D3F4006E2279 /* RegisterReq.swift in Sources */,
+				04BD10EF21D91E97006E2279 /* MedicationDetailController.swift in Sources */,
 				04BEE99121D536B300B0AAA7 /* LoginController.swift in Sources */,
+				04BEE9CB21D64FD300B0AAA7 /* ApiEnvironment.swift in Sources */,
+				04E8605B21DD65F30044108E /* ParentDetailController.swift in Sources */,
+				04BEE9C921D64CD400B0AAA7 /* ApiUser.swift in Sources */,
+				04E8604C21DD01070044108E /* Parent.swift in Sources */,
+				04E8604521D964590044108E /* DateSelectionController.swift in Sources */,
 				04BEE98F21D536B300B0AAA7 /* AppDelegate.swift in Sources */,
+				04BD10D121D6EA10006E2279 /* RealmUser.swift in Sources */,
+				04BEE9D021D6512000B0AAA7 /* PersistentApiContext.swift in Sources */,
+				04BEE9E421D6B75100B0AAA7 /* RegisterController.swift in Sources */,
+				04BD10D421D794BE006E2279 /* ParentService.swift in Sources */,
+				04BD10ED21D91413006E2279 /* MedicationListController.swift in Sources */,
+				04E8605721DD4A830044108E /* FilterDateDelegate.swift in Sources */,
+				04BD10F121D93178006E2279 /* MedicationDelegate.swift in Sources */,
+				04BEE9DC21D66EA300B0AAA7 /* LoginReq.swift in Sources */,
+				04BEE9CE21D650D800B0AAA7 /* ApiContext.swift in Sources */,
+				04BD10E921D81AB3006E2279 /* DateFormatTransform.swift in Sources */,
+				04BEE9D821D6581400B0AAA7 /* AfUserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +832,8 @@
 			baseConfigurationReference = 108CE7E0AC88263A66DE351B /* Pods-Lentekind_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Lentekind_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -593,6 +842,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -603,7 +853,8 @@
 			baseConfigurationReference = 2281DAAC5F2DF6292D4BBAF8 /* Pods-Lentekind_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Lentekind_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,6 +863,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nicolaas-Leenknegt.Lentekind-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

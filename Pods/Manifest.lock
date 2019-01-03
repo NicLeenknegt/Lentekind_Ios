@@ -1,16 +1,43 @@
 PODS:
   - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - CodableFirebase (0.2.1)
+  - FSCalendar (2.8.0)
+  - ObjectMapper (3.4.1)
+  - Realm (3.12.0):
+    - Realm/Headers (= 3.12.0)
+  - Realm/Headers (3.12.0)
+  - RealmSwift (3.12.0):
+    - Realm (= 3.12.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7.0)
+  - AlamofireObjectMapper (~> 5.0)
+  - CodableFirebase
+  - FSCalendar
+  - RealmSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AlamofireObjectMapper
+    - CodableFirebase
+    - FSCalendar
+    - ObjectMapper
+    - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
+  RealmSwift: 5576324033f0aa5ef1e0a839a3da2281dff47a7f
 
-PODFILE CHECKSUM: 7f2ebe5b97988f78d71d21f3ab1c96650c042d90
+PODFILE CHECKSUM: 857ec574fb11981d079ffbfbb8fad25344ea860b
 
 COCOAPODS: 1.5.3
