@@ -51,10 +51,6 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
             if let error = error {
                 print(error.localizedDescription)
             } else {
-                parents.forEach { parent in
-                    print("\(parent.paidDates)")
-                    
-                }
                 self._parents = parents
                 self.filterParents()
             }
@@ -134,7 +130,7 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
         case "ChildDetailSegue":
             if let indexPath = parentTable.indexPathForSelectedRow {
                 let destination = segue.destination as! ParentDetailController
-                destination.selectedChild = _parents[indexPath.section].children[indexPath.row].child
+                destination.selectedChild = _filterParents[indexPath.section].children[indexPath.row].child
             }
             
         default:

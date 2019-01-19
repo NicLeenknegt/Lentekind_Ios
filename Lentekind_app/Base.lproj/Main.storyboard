@@ -461,41 +461,21 @@
         <scene sceneID="0vw-AF-MGN">
             <objects>
                 <tableViewController id="Xrr-Q1-FEc" customClass="ParentDetailController" customModule="Lentekind_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xl8-gU-Vu9">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xl8-gU-Vu9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <sections>
-                            <tableViewSection headerTitle="Allergieën" id="a3X-RK-lg3">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="67" id="Q1x-uQ-Nib">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="67"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q1x-uQ-Nib" id="5VO-XZ-t4a">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66.666666666666671"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJj-Aa-Rc0">
-                                                    <rect key="frame" x="28" y="19" width="358" height="29"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="mJj-Aa-Rc0" secondAttribute="trailing" constant="8" id="25C-HG-wEG"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mJj-Aa-Rc0" secondAttribute="bottom" constant="8" id="93G-sB-Uqm"/>
-                                                <constraint firstItem="mJj-Aa-Rc0" firstAttribute="leading" secondItem="5VO-XZ-t4a" secondAttribute="leadingMargin" constant="8" id="XFX-jt-qPa"/>
-                                                <constraint firstItem="mJj-Aa-Rc0" firstAttribute="top" secondItem="5VO-XZ-t4a" secondAttribute="topMargin" constant="8" id="amt-c5-d8b"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Medicatie" id="UIh-au-fv3">
-                                <cells/>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" rowHeight="67" id="Q1x-uQ-Nib">
+                                <rect key="frame" x="0.0" y="28" width="414" height="67"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q1x-uQ-Nib" id="5VO-XZ-t4a">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="Xrr-Q1-FEc" id="ZsR-yZ-uJN"/>
                             <outlet property="delegate" destination="Xrr-Q1-FEc" id="BvE-As-5gL"/>
@@ -503,7 +483,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="R4e-7d-eMD"/>
                     <connections>
-                        <outlet property="allergyLbl" destination="mJj-Aa-Rc0" id="L0p-BG-XYg"/>
                         <outlet property="childNav" destination="R4e-7d-eMD" id="J4j-yv-Ny5"/>
                         <outlet property="childTable" destination="xl8-gU-Vu9" id="jgH-ah-m4f"/>
                     </connections>
