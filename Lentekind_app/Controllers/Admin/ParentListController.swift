@@ -9,7 +9,8 @@
 import UIKit
 
 //source https://stackoverflow.com/questions/813068/uitableview-change-section-header-color
-class ParentListController:UITableViewController, FilterDateDelegate, UIGestureRecognizerDelegate {
+class ParentListController:UITableViewController, FilterDateDelegate,ParentDetailDelegate, UIGestureRecognizerDelegate {
+
 
     @IBOutlet weak var filterDateBtn: UIBarButtonItem!
     @IBOutlet var parentTable: UITableView!
@@ -20,6 +21,7 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
     var maxDate:Date = Date()
     var selectedDate = Date()
     var dateFormatter = DateFormatter()
+    var selectedIndexPath:IndexPath = IndexPath()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +74,7 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
     func filterParents() {
         _filterParents = []
         let dateString = self.dateFormatter.string(from: selectedDate)
+        var filterIndex = 0
         for (index, parent) in _parents.enumerated() {
             var childArray = [ChildContainer]()
             if (parent.children.filter { c in c.child._dates.map{ d in self.dateFormatter.string(from: d.date) }.contains(dateString) }.count > 0) {
@@ -81,7 +84,8 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
                         childArray.append(con)
                     }
                 }
-                _filterParents[index].children = childArray
+                _filterParents[filterIndex].children = childArray
+                filterIndex += 1
             }
         }
         self.parentTable.reloadData()
@@ -107,7 +111,7 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.tintColor = _parents[section].paidDates.map { d in self.dateFormatter.string(from: d) }.contains(self.dateFormatter.string(from: selectedDate)) ? UIColor.green : UIColor.red
+        view.tintColor = _filterParents[section].paidDates.map { d in self.dateFormatter.string(from: d) }.contains(self.dateFormatter.string(from: selectedDate)) ? UIColor.green : UIColor.red
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.white
     }
@@ -131,6 +135,10 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
             if let indexPath = parentTable.indexPathForSelectedRow {
                 let destination = segue.destination as! ParentDetailController
                 destination.selectedChild = _filterParents[indexPath.section].children[indexPath.row].child
+                destination.date = selectedDate
+                destination.hasPaid = _filterParents[indexPath.section].paidDates.map { d in self.dateFormatter.string(from: d) }.contains(self.dateFormatter.string(from: selectedDate))
+                destination.parent_id = _filterParents[indexPath.section]._id
+                destination.delegate = self
             }
             
         default:
@@ -142,5 +150,36 @@ class ParentListController:UITableViewController, FilterDateDelegate, UIGestureR
         selectedDate = date
         filterDateBtn.title = dateFormatter.string(from: selectedDate)
         self.filterParents()
+    }
+    
+    @IBAction func unwindToParentListTableView(segue:UIStoryboardSegue){
+        let source = segue.source as! ParentDetailController
+        
+        if let selectedIndexPath = parentTable.indexPathForSelectedRow {
+            let dateCheck = _filterParents[selectedIndexPath.section].paidDates.map { d in self.dateFormatter.string(from: d) }.contains(self.dateFormatter.string(from: source.date))
+            var parent = _parents.filter { p in p._id == _filterParents[selectedIndexPath.section]._id }[0]
+            if dateCheck {
+                parent.paidDates = parent.paidDates.filter { d in
+                    d != source.date
+                }
+                filterParents()
+            }
+        }
+    }
+    
+    func setParentPaid(date: Date) {
+        if let selectedIndexPath = parentTable.indexPathForSelectedRow {
+            let parent = _parents.filter { p in p._id == _filterParents[selectedIndexPath.section]._id }[0]
+            _parents[_parents.firstIndex(where: { $0 == parent}) ?? 0].paidDates.append(date)
+            filterParents()
+        }
+    }
+    
+    func setParentUnPaid(date: Date) {
+        if let selectedIndexPath = parentTable.indexPathForSelectedRow {
+            let parent = _parents.filter { p in p._id == _filterParents[selectedIndexPath.section]._id }[0]
+            _parents[_parents.firstIndex(where: { $0 == parent}) ?? 0].paidDates = _parents[_parents.firstIndex(where: { $0 == parent}) ?? 0].paidDates.filter { $0 != date }
+            filterParents()
+        }
     }
 }

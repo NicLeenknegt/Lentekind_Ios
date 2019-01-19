@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043625EA21F3CCB800B0FEE4 /* ParentDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043625E921F3CCB800B0FEE4 /* ParentDetailDelegate.swift */; };
 		04BD10CD21D6D3F4006E2279 /* RegisterReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10CC21D6D3F4006E2279 /* RegisterReq.swift */; };
 		04BD10D121D6EA10006E2279 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D021D6EA10006E2279 /* RealmUser.swift */; };
 		04BD10D421D794BE006E2279 /* ParentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D321D794BE006E2279 /* ParentService.swift */; };
@@ -72,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043625E921F3CCB800B0FEE4 /* ParentDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentDetailDelegate.swift; sourceTree = "<group>"; };
 		043C760BA9B1C9DCCAAB61E0 /* Pods-Lentekind_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appUITests/Pods-Lentekind_appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		04BD10CC21D6D3F4006E2279 /* RegisterReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReq.swift; sourceTree = "<group>"; };
 		04BD10D021D6EA10006E2279 /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 				04E8605421DD28C20044108E /* FilterDateController.swift */,
 				04E8605621DD4A830044108E /* FilterDateDelegate.swift */,
 				04E8605A21DD65F30044108E /* ParentDetailController.swift */,
+				043625E921F3CCB800B0FEE4 /* ParentDetailDelegate.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -655,6 +658,7 @@
 				04BD10F121D93178006E2279 /* MedicationDelegate.swift in Sources */,
 				04BEE9DC21D66EA300B0AAA7 /* LoginReq.swift in Sources */,
 				04BEE9CE21D650D800B0AAA7 /* ApiContext.swift in Sources */,
+				043625EA21F3CCB800B0FEE4 /* ParentDetailDelegate.swift in Sources */,
 				04BD10E921D81AB3006E2279 /* DateFormatTransform.swift in Sources */,
 				04BEE9D821D6581400B0AAA7 /* AfUserService.swift in Sources */,
 			);

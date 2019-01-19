@@ -12,4 +12,8 @@ typealias ParentResult = (_ parent:[Parent], _ error:Error?) -> ()
 
 protocol AdminService {
     func getParents(completion: @escaping ParentResult)
+    
+    func setParentPaid(parent_Id:String, date:Date, completion: @escaping MessageResult)
+    
+    func setParentUnPaid(parent_Id:String, date:Date, completion: @escaping MessageResult)
 }

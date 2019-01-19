@@ -8,36 +8,56 @@
 
 import UIKit
 
-//source: https://gist.github.com/nvkiet/e40b5b49fa3fd3c1952c
-//source: https://stackoverflow.com/questions/18206448/how-can-i-get-the-height-of-a-specific-row-in-my-uitableview
-
 class ParentDetailController:UITableViewController {
     
     @IBOutlet var childTable: UITableView!
     @IBOutlet weak var childNav: UINavigationItem!
     var selectedChild:Child = Child()
+    var date:Date = Date()
+    var hasPaid:Bool = false
+    let adminService = AfAdminService()
+    var parent_id:String = "";
+    var delegate:ParentDetailDelegate? = nil
+    @IBOutlet weak var paidDateBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var contentOffset = childTable.contentOffset
+
         childNav.title = selectedChild.firstname + " " + selectedChild.lastname
-        print(selectedChild.allergies)
-        
-        print(selectedChild.medication.count)
-        var indexPath = IndexPath(row: 0, section: 1)
-        childTable.beginUpdates()
-        selectedChild.medication.forEach { med in
-            print(med)
-            let cell = childTable.cellForRow(at: indexPath)
-            cell?.textLabel?.text = med.name + " : " + med.note
-            contentOffset.y += cell?.fs_height ?? 0
-            childTable.insertRows(at: [indexPath], with: .automatic)
-            indexPath.row += 1
-        }
-        childTable.endUpdates()
-        childTable.setContentOffset(contentOffset, animated: false)
+        paidDateBtn.title = hasPaid ? "Betaald" : "Niet betaald"
     }
 
+    @IBAction func onPaidClick(_ sender: Any) {
+        paidDateBtn.isEnabled = false
+        switch paidDateBtn.title {
+        case "Betaald":
+            adminService.setParentUnPaid(parent_Id: parent_id, date: date) { (message, error) in
+                if error != nil {
+                    self.paidDateBtn.title = "Betaald"
+                    self.paidDateBtn.isEnabled = true
+                } else {
+                    self.paidDateBtn.title = "Niet betaald"
+                    self.delegate?.setParentUnPaid(date: self.date)
+                    self.paidDateBtn.isEnabled = true
+                }
+            }
+            break
+        case "Niet betaald":
+            adminService.setParentPaid(parent_Id: parent_id, date: date) { (message, error) in
+                if error != nil {
+                    self.paidDateBtn.title = "Niet betaald"
+                    self.paidDateBtn.isEnabled = true
+                } else {
+                    self.paidDateBtn.title = "Betaald"
+                    self.delegate?.setParentPaid(date: self.date)
+                    self.paidDateBtn.isEnabled = true
+                }
+            }
+            break
+        default: break
+        }
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -63,7 +83,6 @@ class ParentDetailController:UITableViewController {
         }
         return cell
     }
-    
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {

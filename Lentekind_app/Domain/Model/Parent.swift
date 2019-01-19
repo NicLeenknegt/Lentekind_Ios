@@ -9,7 +9,8 @@
 import Foundation
 import ObjectMapper
 
-struct Parent:Mappable {
+struct Parent:Mappable, Equatable {
+    
     var _id:String = ""
     var firstname:String = ""
     var lastname:String = ""
@@ -26,4 +27,9 @@ struct Parent:Mappable {
         paidDates <- (map["paidDates"], DateFormatTransform())
         children <- map["children"]
     }
+    
+    static func == (lhs: Parent, rhs: Parent) -> Bool {
+        return lhs._id == rhs._id
+    }
+    
 }

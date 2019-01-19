@@ -15,6 +15,7 @@ import RealmSwift
 
 class AfAdminService: AlamofireService, AdminService {
     
+    let formatter = DateFormatTransform()
     
     func getParents(completion: @escaping ParentResult) {
         get(at: .getParents())
@@ -24,5 +25,20 @@ class AfAdminService: AlamofireService, AdminService {
         }
     }
     
+    func setParentPaid(parent_Id:String, date:Date, completion: @escaping MessageResult) {
+        put(at: .setParentPaid(parent_id: parent_Id), params: ["date":formatter.transformToJSON(date) ?? Date()] as [String:Any])
+            .responseObject {
+                (res:DataResponse<Message>) in
+                completion(res.result.value, res.result.error)
+        }
+    }
+    
+    func setParentUnPaid(parent_Id:String, date:Date, completion: @escaping MessageResult) {
+        put(at: .setParentUnPaid(parent_id: parent_Id), params: ["date":formatter.transformToJSON(date) ?? Date()] as [String:Any])
+            .responseObject {
+                (res:DataResponse<Message>) in
+                completion(res.result.value, res.result.error)
+        }
+    }
     
 }
