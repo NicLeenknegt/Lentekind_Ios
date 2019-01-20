@@ -18,7 +18,8 @@ enum ApiRoute { case
     addChild(_id:String),
     getParents(),
     setParentPaid(parent_id:String),
-    setParentUnPaid(parent_id:String)
+    setParentUnPaid(parent_id:String),
+    deleteChild(delete_id:String)
     
     
     var path: String {
@@ -32,6 +33,7 @@ enum ApiRoute { case
         case .getParents(): return "/API/admin/parents"
         case .setParentPaid(let parent_id): return "/API/admin/parent/\(parent_id)/paid"
         case .setParentUnPaid(let parent_id): return "/API/admin/parent/\(parent_id)/unpaid"
+        case .deleteChild(let delete_id): return "/API/parent/\(delete_id)"
         }
     }
     

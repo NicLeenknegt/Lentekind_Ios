@@ -17,6 +17,7 @@ import RealmSwift
 //source https://stackoverflow.com/questions/30480672/how-to-convert-a-json-string-to-a-dictionary
 
 class AfParentService:AlamofireService, parentService {
+
     
     private var realm:Realm { return try! Realm() }
     
@@ -83,6 +84,14 @@ class AfParentService:AlamofireService, parentService {
             }
         } catch {
             print("something went wrong")
+        }
+    }
+    
+    func deleteChild(delete_id: String, completion: @escaping MessageResult) {
+        delete(at: .deleteChild(delete_id: delete_id))
+            .responseObject {
+                (res:DataResponse<Message>) in
+                completion(res.result.value, res.result.error)
         }
     }
     

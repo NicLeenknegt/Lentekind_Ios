@@ -10,6 +10,9 @@ import Foundation
 import Alamofire
 import SwiftKeychainWrapper
 
+//source: https://www.raywenderlich.com/35-alamofire-tutorial-getting-started
+//source: https://medium.com/hyphe/realm-and-alamofire-in-effective-harmony-6aba9fb29391
+
 class AlamofireService {
     
     
@@ -47,6 +50,15 @@ class AlamofireService {
             params: params,
             encoding: JSONEncoding.default)
     }
+    
+    func delete(at route: ApiRoute, params: Parameters? = nil) -> DataRequest {
+        return request(
+            at: route,
+            method: .delete,
+            params: params,
+            encoding: JSONEncoding.default)
+    }
+    
     
     func request(at route: ApiRoute, method: HTTPMethod, params: Parameters?, encoding: ParameterEncoding) -> DataRequest {
         let url = route.url(for: "http://projecten3studserver03.westeurope.cloudapp.azure.com:3002")

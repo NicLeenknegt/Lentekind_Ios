@@ -541,7 +541,6 @@
                                 <action selector="onNewClick:" destination="Jki-DY-Qnc" id="zrb-Np-SIi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="verwijderen" id="t0j-mc-aIG"/>
                     </navigationItem>
                     <connections>
                         <outlet property="childrenTable" destination="Xea-2o-pSD" id="oKg-O9-Iw5"/>

@@ -19,4 +19,6 @@ protocol parentService {
     func addChild(child:Child, completion: @escaping MessageResult)
     
     func setDateOfChild(child_id:String, dateObjects:[DateObject], completion: @escaping MessageResult)
+    
+    func deleteChild(delete_id:String, completion: @escaping MessageResult)
 }

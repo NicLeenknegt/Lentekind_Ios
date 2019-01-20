@@ -122,6 +122,19 @@ class ChildListController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            parentService.deleteChild(delete_id: _children[indexPath.row]._id) { (message, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    self._children.remove(at: indexPath.row)
+                    self.childrenTable.deleteRows(at: [indexPath], with: .fade)
+                }
+            }
+        }
+    }
+    
     @IBAction func unwindToChildrenTableFromDateSelection(segue:UIStoryboardSegue) {
         guard segue.identifier == "SaveUnwind" else { return }
         let dates = (segue.source as! DateSelectionController).fsCalendar.selectedDates
