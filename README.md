@@ -1,5 +1,6 @@
 # Lentekind_Ios-NicLeenknegt
-
+## beschrijving
+Het is een app ontworpen voor een speelpleinwerking genaamd Lentekind. Ouders kunnen kinderen aanmaken, ze kunnen aangeven of hun kind allergieën of medicatie moet nemen en ze kunnen hun kind inschrijven voor een bepaalde datum. Administrators kunnen zien welke kinderen op welke datum komen en ze kunnnen aangeven of de ouder al heeft betaald voor de kinderen.
 ## testgebruikers
 ### ouder
 * email: kenzie@gmail.com
@@ -15,18 +16,6 @@
 * [FSCalendar](https://github.com/WenchaoD/FSCalendar) - Datum selectie UI element
 * [KeyChainWrapper](https://github.com/jrendel/SwiftKeychainWrapper) - Keychain om de token op te slaan
 * [CodableFirebase](https://github.com/alickbass/CodableFirebase) - Om objecten om te zetten naar Json
-
-## Tutorials
-
-* [Android cursus](https://github.com/HoGentTIN/software-development-in-Android)
-* [Espresso tutorial voor Dagger](https://medium.com/appunite-edu-collection/ui-testing-on-android-with-dagger-espresso-and-mockito-12d37e5f613d)
-* [Dagger tutorial](http://www.vogella.com/tutorials/Dagger/article.html)
-
-## Testen
-
-1. Log de huidige gebruiker uit in de app als er iemand is ingelogd.
-2. Rechterklik op TestSuite onder **(AndroidTest)**.
-3. Klik op **Run 'TestSuite'**.
 
 ## Auteur
 
