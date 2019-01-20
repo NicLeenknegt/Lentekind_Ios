@@ -24,7 +24,7 @@ enum ApiRoute { case
     
     var path: String {
         switch self {
-        case .login(let _, let _):return "/API/users/login"
+        case .login( _, _):return "/API/users/login"
         case .register(): return "/API/users/register"
         case .getChildren(let _id): return "/API/parent/\(_id)"
         case .updateChild(): return "/API/parent/children"

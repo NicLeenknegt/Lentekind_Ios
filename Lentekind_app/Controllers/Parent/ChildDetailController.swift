@@ -8,6 +8,8 @@
 
 import UIKit
 
+//source: https://stackoverflow.com/questions/3064864/uidatepicker-setting-maximum-and-minimum-dates-based-on-todays-date
+
 class ChildDetailViewController:UITableViewController,MedicationDelegate {
     
     
@@ -26,6 +28,13 @@ class ChildDetailViewController:UITableViewController,MedicationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         saveBtn.isEnabled = (!child.firstname.isEmpty || !child.lastname.isEmpty)
+        let calendar = Calendar(identifier: .gregorian)
+        var comps = DateComponents()
+        let maxDate = Date()
+        comps.year = -12
+        let minDate = calendar.date(byAdding: comps, to: Date())
+        birthDatePicker.maximumDate = maxDate
+        birthDatePicker.minimumDate = minDate
         if (!child.firstname.isEmpty) {
             firstnameTxt.text = child.firstname
             lastnameTxt.text = child.lastname

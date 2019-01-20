@@ -17,8 +17,6 @@ class AfUserService: AlamofireService, userService {
     private var realm: Realm { return try! Realm() }
     
     func login(email: String, password: String, completion: @escaping UserResult) {
-        print("FILEURL")
-        print(realm.configuration.fileURL)
         let dict: [String: Any] = try! FirestoreEncoder().encode(LoginReq(email:email, password:password))
         post(at: .login(email: email, password: password), params: dict)
             .responseObject {

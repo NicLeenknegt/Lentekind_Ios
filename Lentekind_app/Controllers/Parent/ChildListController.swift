@@ -24,6 +24,7 @@ class ChildListController: UITableViewController {
                 print(error.localizedDescription)
             } else {
                 self._children = childrenCons.map { (con) -> Child in return con.child }
+                self._children = self._children.filter { !($0.firstname.isEmpty && $0.lastname.isEmpty) }
                 self.tableView.reloadData()
             }
         }
