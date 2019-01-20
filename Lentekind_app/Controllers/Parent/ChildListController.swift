@@ -16,6 +16,7 @@ class ChildListController: UITableViewController {
     let parentService = AfParentService()
     var _children = [Child]()
     var selectedChild = Child()
+    var newChild = true
     override func viewDidLoad() {
         super.viewDidLoad()
         parentService.getChildren() { (childrenCons, error) in

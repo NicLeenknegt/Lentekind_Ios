@@ -11,6 +11,7 @@ import UIKit
 class ChildDetailViewController:UITableViewController,MedicationDelegate {
     
     
+    @IBOutlet weak var addDatesBtn: UIButton!
     @IBOutlet weak var firstnameTxt: UITextField!
     @IBOutlet weak var birthDatePicker: UIDatePicker!
     @IBOutlet weak var allergiesTxt: UITextField!

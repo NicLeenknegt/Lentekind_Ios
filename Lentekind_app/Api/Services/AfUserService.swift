@@ -43,6 +43,10 @@ class AfUserService: AlamofireService, userService {
         return rlmUser.getUser()
     }
     
+    func hasUser() -> Bool {
+        return !realm.isEmpty
+    }
+    
     private func persist(_ user:User?) {
         guard let user = user else { return }
         let obj = realm.object(ofType: RealmUser.self, forPrimaryKey: user._id)

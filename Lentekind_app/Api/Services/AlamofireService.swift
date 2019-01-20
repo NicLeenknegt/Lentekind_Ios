@@ -8,8 +8,12 @@
 
 import Foundation
 import Alamofire
+import SwiftKeychainWrapper
 
 class AlamofireService {
+    
+    
+    let keyChain:KeychainWrapper = KeychainWrapper(serviceName: "Lentekind", accessGroup: "All")
     
     init(context: ApiContext = PersistentApiContext()) {
         self.context = context
@@ -46,11 +50,14 @@ class AlamofireService {
     
     func request(at route: ApiRoute, method: HTTPMethod, params: Parameters?, encoding: ParameterEncoding) -> DataRequest {
         let url = route.url(for: "http://projecten3studserver03.westeurope.cloudapp.azure.com:3002")
+        let headers:HTTPHeaders = ["Authorization": keyChain.string(forKey: "Token") ?? "none"]
+        print(keyChain.string(forKey: "Token") ?? "none")
         return Alamofire.request(
             url,
             method: method,
             parameters: params,
-            encoding: encoding)
+            encoding: encoding,
+            headers: headers)
             .validate()
     }
 }

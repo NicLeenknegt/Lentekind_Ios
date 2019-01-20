@@ -9,7 +9,7 @@
 import UIKit
 
 //source https://stackoverflow.com/questions/813068/uitableview-change-section-header-color
-class ParentListController:UITableViewController, FilterDateDelegate,ParentDetailDelegate, UIGestureRecognizerDelegate {
+class ParentListController:UITableViewController, FilterDateDelegate,ParentDetailDelegate {
 
 
     @IBOutlet weak var filterDateBtn: UIBarButtonItem!
@@ -25,9 +25,6 @@ class ParentListController:UITableViewController, FilterDateDelegate,ParentDetai
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
-        self.view.addGestureRecognizer(longPressRecognizer)
         
         dateFormatter.dateFormat = "dd/MM/YYYY"
         let date:Date = Date()
@@ -60,22 +57,11 @@ class ParentListController:UITableViewController, FilterDateDelegate,ParentDetai
         }
     }
     
-    @objc func longPress(sender: UILongPressGestureRecognizer) {
-        
-        if sender.state == UIGestureRecognizer.State.began {
-            
-            let touchPoint = sender.location(in: self.view)
-            if let indexPath = parentTable.indexPathForRow(at: touchPoint) {
-                
-            }
-        }
-    }
-    
     func filterParents() {
         _filterParents = []
         let dateString = self.dateFormatter.string(from: selectedDate)
         var filterIndex = 0
-        for (index, parent) in _parents.enumerated() {
+        for (_, parent) in _parents.enumerated() {
             var childArray = [ChildContainer]()
             if (parent.children.filter { c in c.child._dates.map{ d in self.dateFormatter.string(from: d.date) }.contains(dateString) }.count > 0) {
                 _filterParents.append(parent)

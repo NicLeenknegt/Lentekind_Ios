@@ -16,6 +16,7 @@ struct User:Mappable{
     var lastname:String = ""
     var telNr:String = ""
     var rights:Int = -1
+    var token:String = ""
     
     init() {}
     init?(map: Map) {}
@@ -27,5 +28,6 @@ struct User:Mappable{
         lastname <- map["lastname"]
         telNr <- map["telNr"]
         rights <- map["rights"]
+        token <- map["token"]
     }
 }

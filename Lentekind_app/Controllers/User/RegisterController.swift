@@ -56,7 +56,7 @@ class RegisterController: UIViewController, UIPickerViewDataSource, UIPickerView
         }
         
         userService.register(req: RegisterReq(firstname:firstname, lastname:lastname, email:email, password:password, telNr: telNr, rights: selectedValue)) { (user, error) in
-            if let error = error {
+            if error != nil {
                 self.errorLbl.text = "Er ging iets fout probeer later opnieux"
             } else {
                 if let user = user {

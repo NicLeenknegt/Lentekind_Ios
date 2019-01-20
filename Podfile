@@ -11,6 +11,7 @@ target 'Lentekind_app' do
   pod 'CodableFirebase'
   pod 'RealmSwift'
   pod 'FSCalendar'
+  pod 'SwiftKeychainWrapper'
 
   target 'Lentekind_appTests' do
     inherit! :search_paths
