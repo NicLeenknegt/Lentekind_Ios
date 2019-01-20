@@ -58,4 +58,16 @@ class AfUserService: AlamofireService, userService {
         }
         
     }
+    
+    func nukeUser() -> Bool {
+        do {
+            try realm.write {
+                realm.delete(realm.objects(RealmUser.self))
+            }
+            return true
+        } catch {
+            return false
+        }
+       
+    }
 }

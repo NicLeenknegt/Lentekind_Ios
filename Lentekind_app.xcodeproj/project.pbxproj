@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		043625EA21F3CCB800B0FEE4 /* ParentDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043625E921F3CCB800B0FEE4 /* ParentDetailDelegate.swift */; };
+		043625EC21F3E89A00B0FEE4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043625EB21F3E89A00B0FEE4 /* ProfileController.swift */; };
+		04379FAB21F4953A00D9305B /* baseline_person_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 04379FAA21F4953A00D9305B /* baseline_person_black_18dp.png */; };
+		04379FAD21F4959F00D9305B /* baseline_list_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 04379FAC21F4959F00D9305B /* baseline_list_black_18dp.png */; };
 		04BD10CD21D6D3F4006E2279 /* RegisterReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10CC21D6D3F4006E2279 /* RegisterReq.swift */; };
 		04BD10D121D6EA10006E2279 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D021D6EA10006E2279 /* RealmUser.swift */; };
 		04BD10D421D794BE006E2279 /* ParentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD10D321D794BE006E2279 /* ParentService.swift */; };
@@ -74,6 +77,9 @@
 
 /* Begin PBXFileReference section */
 		043625E921F3CCB800B0FEE4 /* ParentDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentDetailDelegate.swift; sourceTree = "<group>"; };
+		043625EB21F3E89A00B0FEE4 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		04379FAA21F4953A00D9305B /* baseline_person_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baseline_person_black_18dp.png; path = "../../../../../../Downloads/baseline-person-black-18/2x/baseline_person_black_18dp.png"; sourceTree = "<group>"; };
+		04379FAC21F4959F00D9305B /* baseline_list_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baseline_list_black_18dp.png; path = "../../../../../../Downloads/baseline-list-black-18/2x/baseline_list_black_18dp.png"; sourceTree = "<group>"; };
 		043C760BA9B1C9DCCAAB61E0 /* Pods-Lentekind_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lentekind_appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lentekind_appUITests/Pods-Lentekind_appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		04BD10CC21D6D3F4006E2279 /* RegisterReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReq.swift; sourceTree = "<group>"; };
 		04BD10D021D6EA10006E2279 /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
@@ -161,6 +167,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04379FA721F4949200D9305B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				04379FAA21F4953A00D9305B /* baseline_person_black_18dp.png */,
+				04379FAC21F4959F00D9305B /* baseline_list_black_18dp.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		04BD10D221D78F78006E2279 /* Parent */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +270,7 @@
 			children = (
 				04BEE99021D536B300B0AAA7 /* LoginController.swift */,
 				04BEE9E321D6B75100B0AAA7 /* RegisterController.swift */,
+				043625EB21F3E89A00B0FEE4 /* ProfileController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -262,6 +278,7 @@
 		04BEE9C021D6479900B0AAA7 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				04379FA721F4949200D9305B /* images */,
 				04BEE9DA21D66E4C00B0AAA7 /* Model */,
 				04BEE9D921D66E4200B0AAA7 /* Protocols */,
 				04BEE9C321D64BB600B0AAA7 /* Services */,
@@ -494,7 +511,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BEE99921D536B500B0AAA7 /* LaunchScreen.storyboard in Resources */,
+				04379FAD21F4959F00D9305B /* baseline_list_black_18dp.png in Resources */,
 				04BEE99621D536B500B0AAA7 /* Assets.xcassets in Resources */,
+				04379FAB21F4953A00D9305B /* baseline_person_black_18dp.png in Resources */,
 				04BEE99421D536B300B0AAA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +647,7 @@
 				04BD10DF21D79D38006E2279 /* AfParentService.swift in Sources */,
 				04E8604821DCE8C80044108E /* ParentListController.swift in Sources */,
 				04BEE9D621D6529D00B0AAA7 /* UserRoute.swift in Sources */,
+				043625EC21F3E89A00B0FEE4 /* ProfileController.swift in Sources */,
 				04BEE9C521D64BD600B0AAA7 /* UserService.swift in Sources */,
 				04BD10DC21D799F8006E2279 /* DateObject.swift in Sources */,
 				04E8605521DD28C20044108E /* FilterDateController.swift in Sources */,
